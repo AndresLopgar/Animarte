@@ -19,24 +19,84 @@ nav {
             a {
                 display: inline-block;
                 text-decoration: none;
-                color: rgba(0, 0, 0, 0.8);
+                color: rgba(0, 0, 0, 0.8);  // Color predeterminado
                 font-size: 18px;
                 font-weight: bold;
                 transition: color 0.3s ease;
             }
 
-            &.active {
-                background: rgba(255, 87, 51, 0.2);
+            &.home {
+                // Home: fondo grisáceo y texto negro
+                &:hover {
+                    background: #f0f0f0;  // Blanco grisáceo
+                    a {
+                        color: black;
+                    }
+                }
+
+                &.active {
+                    background: #f0f0f0;  // Blanco grisáceo
+                    a {
+                        color: black;
+                    }
+                }
             }
 
+            &.animarte-sport {
+                // AnimarteSport: fondo azul y texto blanco
+                &:hover {
+                    background: #1e90ff;  // Azul
+                    a {
+                        color: white;
+                    }
+                }
+
+                &.active {
+                    background: #1e90ff;  // Azul
+                    a {
+                        color: white;
+                    }
+                }
+            }
+
+            &.animarte-party {
+                // AnimarteParty: fondo negro y texto blanco
+                &:hover {
+                    background: #000000;  // Negro
+                    a {
+                        color: white;
+                    }
+                }
+
+                &.active {
+                    background: #000000;  // Negro
+                    a {
+                        color: white;
+                    }
+                }
+            }
+
+            &.animarte-club {
+                // AnimarteClub: fondo naranja y texto blanco
+                &:hover {
+                    background: #ff7f00;  // Naranja
+                    a {
+                        color: white;
+                    }
+                }
+
+                &.active {
+                    background: #ff7f00;  // Naranja
+                    a {
+                        color: white;
+                    }
+                }
+            }
+
+            // Estilo común para el hover general
             &:hover {
                 cursor: pointer;
                 transform: scale(1.1);
-                background: rgba(255, 87, 51, 0.3);
-            }
-
-            &:hover a {
-                color: #ff5733;
             }
         }
     }
