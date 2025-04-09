@@ -1,0 +1,43 @@
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        padding: 0;
+        margin: 0;
+
+        li {
+            background: transparent;
+            border-radius: 12px;
+            padding: 10px 20px;
+            transition: transform 0.3s ease, background 0.3s ease;
+
+            a {
+                display: inline-block;
+                text-decoration: none;
+                color: rgba(0, 0, 0, 0.8);
+                font-size: 18px;
+                font-weight: bold;
+                transition: color 0.3s ease;
+            }
+
+            &.active {
+                background: rgba(255, 87, 51, 0.2);
+            }
+
+            &:hover {
+                cursor: pointer;
+                transform: scale(1.1);
+                background: rgba(255, 87, 51, 0.3);
+            }
+
+            &:hover a {
+                color: #ff5733;
+            }
+        }
+    }
+}
