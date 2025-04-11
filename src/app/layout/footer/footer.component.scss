@@ -1,0 +1,66 @@
+.layout {
+    border-top: solid 1px black;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    justify-items: center;
+    text-align: center;
+
+    .grow1 {
+        padding: 16px;
+    }
+
+    p {
+        text-align: left;
+        width: 100%;
+        display: flex;
+        align-items: center;
+
+        i {
+            margin-right: 8px;
+        }
+    }
+
+    .social-link {
+        text-decoration: none;
+        color: inherit;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .email-link {
+        text-decoration: none;
+        color: inherit;
+        cursor: pointer;
+    }
+    
+
+    // Estilos para los enlaces de LinkedIn
+    .linkedin-link {
+        text-decoration: none; // Elimina el subrayado
+        color: inherit; // Mantiene el color del texto original
+        display: flex;
+        align-items: center;
+        cursor: pointer; // Cambia el cursor al pasar sobre el enlace
+
+        i {
+            margin-right: 8px;
+            font-size: 1.2rem;
+        }
+    }
+
+    // Colores para los iconos
+    .instagram { color: #E4405F; }  // Rosa de Instagram
+    .tiktok { color: #000000; }      // Negro de TikTok
+    .email { color: #D44638; }       // Rojo de Gmail
+    .phone { color: #34A853; }       // Verde de teléfono
+    .linkedin { color: #0A66C2; }    // Azul de LinkedIn
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-style: italic;
+}
