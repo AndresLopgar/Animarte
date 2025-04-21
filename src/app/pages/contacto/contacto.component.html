@@ -1,0 +1,18 @@
+<p>contacto works!</p>
+<div id="Horario">
+    <h2>Horario de atención</h2>
+</div>
+<div id="Formulario">
+    <form [formGroup]="form" (ngSubmit)="enviarCorreo()">
+        <label>Nombre:</label>
+        <input formControlName="nombre" type="text" />
+      
+        <label>Correo:</label>
+        <input formControlName="correo" type="email" />
+      
+        <label>Mensaje:</label>
+        <textarea formControlName="mensaje"></textarea>
+      
+        <button type="submit" [disabled]="form.invalid">Enviar</button>
+      </form>
+</div>
